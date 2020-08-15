@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -19,6 +19,10 @@
     margin: 0px;
     box-sizing: border-box;
 }
+ 
+html {
+    scroll-behavior: smooth;
+  }
 
 
 /* ++++++++++++++variable declration +++++++++++++++ */
@@ -36,7 +40,8 @@
 .navbar .navbar-brand{
     padding: 0.5rem 6rem;   
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 800;
+    font-size: 3rem;
     text-transform: uppercase;
     
 }
@@ -44,7 +49,11 @@
 
 /* ++++++++++++++navbaar start+++++++++++++++++++++++++++++ */
 
+.navbar img{
+    border-radius: 50%;
+}
 .collapse .navbar-nav{
+    position: static;
     padding: 0.5rem 19rem;
 
 }
@@ -73,41 +82,43 @@
 
 /* +++++++++banner name start++++++++++++ */
 .site-banner{
-    /* background: url("https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat 0% 50%; */
+    background: url("https://tripurrasilks.co.za/wp-content/uploads/2019/04/videoblocks-white-and-grey-paper-geometric-squares-motion-background-seamless-looping-video-animation-ultra-hd-4k-3840x2160_hcxncxphz_thumbnail-full01.png") no-repeat 0% 50%;
+   
 }
 .site-banner  h2{
     font-family: 'Roboto', sans-serif;
-
+    
     padding-top: 37%;
     font-weight: 500;
     
 }
 .site-banner     h2::after{
-content: "";
-height: 2px;
-width: 18vw;
-background: black;
-display: inline-block;
-margin-left: 5%;
-transform: translateY(-10px);
-
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+    
 }
- 
-.site-banner   h1{
 
-   font-size: 5rem;
-   font-family: 'Baloo Bhai 2', cursive;
-   font-family: 'Roboto', sans-serif;
-   
+.site-banner   h1{
+    
+    font-size: 5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 .site-banner     h4{
     font-family: 'Roboto', sans-serif;
-   font-size: 1.7rem;
+    font-size: 1.7rem;
     
 }
-    
+
 .site-button .btn {
+  
     border: 2px solid black;
     margin: 1rem;
     padding: 0.5rem 1.5rem ;
@@ -127,10 +138,12 @@ transform: translateY(-10px);
 .site-button  .secondary-button:hover{
     /* background-color: rgba(216, 10, 10, 0.299); */
     background-color: rgb(225, 32, 32);
+    transform: scale(1.1) ;
     
-
+    
 }
 .site-button  .primary-button:hover{
+    transform: scale(1.1) ;
     background-color:whitesmoke;
 transition:ease-in-out;
 
@@ -141,6 +154,9 @@ transition:ease-in-out;
 /* +++++++++banner name  end++++++++++++ */
 
 /* ++++++++++++++banner-image :start+++++++++++++++++ */
+.about-area{
+    background: url(" https://i.ytimg.com/vi/R9mXtzn8meE/maxresdefault.jpg") no-repeat 50% 50%;
+}
 .banner-image >img{
     padding: 5rem 0rem;
     height: 40rem ;
@@ -193,6 +209,7 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
     /* font-family: 'Playfair Display', serif; */
     font-size: 3rem ;
     line-height: 5.5rem;
+    /*   */
     
 
      
@@ -223,15 +240,126 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
    
     margin: auto;
 } 
-.contact{
+.contact {
     padding: 4rem 0 ;
+     
+}
+.contact .con-2  {
     background: whitesmoke;
+    
+    /* background: url("https://img.freepik.com/free-photo/contact-icons-keyboard-button-online-contact-concept_2227-1391.jpg?size=1206&ext=jpg&ga=GA1.2.1193136732.1585629592" )no-repeat 50% 50% ; */
+    /* opacity: 0.8; */
+}
+.contact-1{
+    
 }
 /* +++++++++++contact end+++++++++++++++ */
+
+/* +++++++++++++++++skilllllllll+++++++++++ */
+#skills{
+    background-color: whitesmoke;
+    font-family: 'Baloo Bhai 2', cursive ; 
+}
+
+.content3{
+padding-top: 60px;
+padding-bottom: 60px;
+position: relative;
+}
+
+.content3 .title{
+/* margin-bottom: 60px; */
+position: relative;
+color:black;
+font-size: 50px;
+font-family: 'Roboto', sans-serif;
+font-family: 'Baloo Bhai 2', cursive ; 
+/* font-weight: 10; */
+/* text-decoration: underline; */
+text-align: center;
+}
+
+  .skill-line{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.ski{
+padding-left: 20px;
+padding-right: 20px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+
+.skill-info{
+display: flex;
+justify-content: space-between;
+color: black;
+}
+
+.skill-bar{
+height: 3px;
+background-color: rgb(14, 1, 1);
+margin-top: 14px;
+position: relative;
+}
+
+.skill-bar::after{
+content: '';
+position: absolute;
+height: 6px;
+background-color:#48dbfb;
+bottom: 0;
+}
+
+.html::after{
+width: 95%;
+}
+
+.css::after{
+width: 90%;
+}
+
+.javascript::after{
+width: 50%;
+}
+
+.bootstrap::after{
+width: 95%;
+}
+
+.nodejs::after{
+width: 40%;
+}
+.c::after{
+	width: 40%;
+}
+.python::after{
+	width: 50%;
+}
+ 
+.photoshop::after{
+width: 70%;
+}
+
+
+
  /* meadiya quires+++++++++++++ */
  @media screen and (max-width: 1040px) {
     .submit-btn{
         padding: 0.5rem 8rem;
+    }
+ 
+       
+        
+  }
+ @media screen and (max-width: 600px) {
+    .about-para{
+        padding: 6px;
+        margin: 26px;
     }
  
        
@@ -248,13 +376,26 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
        width: 100px;
         margin: auto;
     }  
+    .skill-line{
+        width: 100px;
+        display: block;
+        margin: auto;
+    }
+  }
+
+  h1{
+    font-family: 'Baloo Bhai 2', cursive ; 
   }
  </style>
 
   </head>
   <body>
+     
     <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#">Rahul </a>
+      <!-- <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Bootstrap
+  </a> -->
+        <a class="navbar-brand" href="#">𝕽𝖆𝖍𝖚𝖑 </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -265,21 +406,21 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About </a>
+              <a class="nav-link" href="#About-0">About </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skill</a>
+              <a class="nav-link" href="#skill-0">Skill</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact </a>
+              <a class="nav-link" href="#contact-0">Contact </a>
             </li>
             
           </ul>
         </div>
-      </nav>
+      </nav> 
 
       <!-- +++++++++banner making start++++++++++++++ -->
-     <br><b><br><br></b> <section class="site-banner"> 
+       <section class="site-banner"> 
       <div class="container">
           <div class="row">
               <div class="col-lg-6 col-md-12 col-12">
@@ -304,7 +445,7 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
 
       <!-- ++++++++++++++about section start++++++++++++++++++++++++ -->
       <br><br><br><br><br> <section class="about-area">
-        <h1 class=" aboutme text-center "  >About me </h1> 
+        <h1 class=" aboutme text-center " id="About-0" >About me </h1> 
         <hr class="line " color="red">
         <div class="container">
           <div class="row">
@@ -327,10 +468,11 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
               <span>Name: Rahul MEENA </span><br>
               <span>Age: 20</span><br>
               <span>Birthday:7 May 2000</span><br>
-              <span>From: Jaipur, Rajasthan, India</span><br>
               <span>Degree: B.Tech</span><br>
               <span>Year: 2nd Year</span><br>
+              <span>Hobby:Photography</span><br>
               <span> Mobile no.- 9664312615 </span><br>
+              <span>From: Jaipur, Rajasthan, India</span><br>
               <span>Email: rahulbadgoti000@gmail.com</span><br>
               <span>College: Rajasthan Technical University, kota</span><br>
             </div>
@@ -348,15 +490,108 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
         </div>
       </section>
       <!-- ++++++++++++++about section end++++++++++++++++++++++++ --> 
-      <!-- ++++++++++++++++skill section start+++++++++++++++++++++++ -->
+      <!-- ++++++++++++++++skill section start+++++++++++++++++++++++ --><div class="container-fluid">
+	
+	<div id="skills">
+    <div class="content3">
+    <h1 class="title" id="skill-0">Skills</h1>
+    <hr class="skill-line" color="red"><br><br>
+    <div class="ski">
+  
+      <div class="row  col-md-12  my-1">
+         <div class="skill col-md-6 my-2">
+          <div class="skill-info">
+          <span>HTML</span>
+          <span>95%</span>
+          </div>
+          <div class="skill-bar html"></div>
+        </div>
+      
+  
+      <div class="skill  col-md-6 my-2">
+          <div class="skill-info">
+          <span>CSS</span>
+          <span>90 %</span>
+          </div>
+          <div class="skill-bar css"></div>
+        </div>
+      </div>
+  
+  <div class="row col-md-12 my-1">
+  
+      <div class="skill col-md-6  my-2">
+        <div class="skill-info">
+          <span>JAVASCRIPT</span>
+          <span>50%</span>
+        </div>
+          <div class="skill-bar javascript"></div>
+        </div>
+    
+  
+      <div class="skill col-md-6 my-2">
+        <div class="skill-info">
+          <span>BOOTSTRAP</span>
+          <span>95%</span>
+        </div>
+          <div class="skill-bar bootstrap"></div>
+        </div>
+  </div>
+  
+  <div class="row col-md-12 my-1">
+  
+      <div class="skill col-md-6 my-2">
+        <div class="skill-info">
+          <span>NODE.JS</span>
+          <span>40%</span>
+        </div>
+          <div class="skill-bar nodejs"></div>
+        </div>
+      
+  
+      <div class="skill col-md-6 my-2">
+        <div class="skill-info">
+          <span>C</span>
+          <span>40%</span>
+        </div>
+          <div class="skill-bar c"></div>
+        </div>
+  </div>			
+      
+  <div class="row col-md-12 my-1">
+  
+      <div class="skill col-md-6 my-2">
+        <div class="skill-info">
+          <span>adobe illustrator</span>
+          <span>50%</span>
+        </div>
+          <div class="skill-bar python"></div>
+        </div>
+      
+  
+      <div class="skill col-md-6 my-2">
+        <div class="skill-info">
+          <span>PHOTOSHOP</span>
+          <span>70%</span>
+        </div>
+      
+          <div class="skill-bar photoshop"></div>
+        </div> 
+  </div>
+  
+  
+    </div>
+     </div>
+  </div>
+  
+  </div>
 
       <!-- ++++++++++++++++skill section end+++++++++++++++++++++++ -->
 
       <!-- +++++++++++++++++++++++++++contact section start+++++++++++++++++++++ -->
      <section class="contact">
-      <h1 class=" aboutme text-center "  > Contact Us  </h1> 
+      <h1 class=" contact-1  text-center  " id="contact-0" > Contact Us  </h1> 
       <hr class="line " color="red"><br><br><br>
-       <div class="container">
+       <div class=" con-2 container">
          <div class="row">
            <div class=" contact-line col-lg-6 col-md-12 col-12">
              <h2>
