@@ -13,8 +13,14 @@
  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital@1&family=El+Messiri:wght@700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
- <style>
-   *{
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+     
+  <style>
+*{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -24,18 +30,8 @@ html {
     scroll-behavior: smooth;
   }
 
-
-/* ++++++++++++++variable declration +++++++++++++++ */
-:root{
-    --primary-color:#4458dc; 
-    --title-color:#141313;
-    --text-color:#777777;
-    --gradient-color:liner-gradient(90deg,#4458dc 0%, #854fee 100%);
-    --shadow-color: 0px 10px 30px rgba(112, 75, 233, 0.3);
-    -- box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-
-    
-}
+ 
+ 
 /* ++++++++++rahul logo csss start++++++++++++++ */
 .navbar .navbar-brand{
     padding: 0.5rem 6rem;   
@@ -47,38 +43,43 @@ html {
 }
 /* ++++++++++rahul logo csss end++++++++++++++ */
 
-/* ++++++++++++++navbaar start+++++++++++++++++++++++++++++ */
-
-.navbar img{
-    border-radius: 50%;
-}
-.collapse .navbar-nav{
-    position: static;
-    padding: 0.5rem 19rem;
-
-}
-
-
+/* -++++++++--navbar css satrt ------------------------- */
 .collapse .navbar-nav .nav-item{
     padding: 0.5rem 0.8rem;
-    text-transform: uppercase;
-    
     
 }
-
 .collapse .navbar-nav .nav-item a{
-    color: rgb(36, 137, 238);
-    /* color: var(--gradient-color); */
+    color: rgb(0, 0, 0);
     font-weight: 600;
-}
+    align-items: center;
+    
+} 
 .collapse .navbar-nav .nav-item a:hover{
-    color:cyan;
-    color: var(--gradient-color);
-}
+    color: rgb(36, 137, 238);
+    font-weight: 700;
+     
+    
+} 
+.collapse .navbar-nav .nav-item a:active{
+    color: rgb(226, 21, 21);
+} 
+     
+     
+    
+ 
+    
+    
+/* -++++++++--navbar css end  ------------------------- */
 
 
 
-/* ++++++++++++++navbaar :end+++++++++++++++++++++++++++++ */
+
+
+
+
+
+
+ 
 
 /* +++++++++banner name start++++++++++++ */
 .site-banner{
@@ -92,7 +93,7 @@ html {
     font-weight: 500;
     
 }
-.site-banner     h2::after{
+.site-banner h2::after{
     content: "";
     height: 2px;
     width: 18vw;
@@ -155,7 +156,8 @@ transition:ease-in-out;
 
 /* ++++++++++++++banner-image :start+++++++++++++++++ */
 .about-area{
-    background: url(" https://i.ytimg.com/vi/R9mXtzn8meE/maxresdefault.jpg") no-repeat 50% 50%;
+   
+    background:rgb(247, 247, 247);
 }
 .banner-image >img{
     padding: 5rem 0rem;
@@ -231,7 +233,8 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
     
 }
 .submit-btn{
-    padding: 0.5rem 14.5rem;
+    /* padding: 0.5rem 14.5rem; */
+    width: 30rem;
      
     
 }
@@ -348,23 +351,37 @@ width: 70%;
 
 
  /* meadiya quires+++++++++++++ */
- @media screen and (max-width: 1040px) {
+ @media screen and ( max-width: 1205px) {
     .submit-btn{
-        padding: 0.5rem 8rem;
+       
+        width: 25rem;
+         
+        
     }
+ @media screen and ( max-width: 443px) {
+    .submit-btn{
+       
+        width: 15rem;
+         
+        
+    }
+ @media screen and ( max-width: 276px) {
+    .submit-btn{
+       
+        width: 9rem;
+    }
+}
+         
+        
  
        
         
-  }
- @media screen and (max-width: 600px) {
-    .about-para{
-        padding: 6px;
-        margin: 26px;
-    }
+  
+  
+ 
  
        
         
-  }
   @media screen and (max-width: 540px){
      .contact .line{
        
@@ -385,45 +402,48 @@ width: 70%;
 
   h1{
     font-family: 'Baloo Bhai 2', cursive ; 
+    
   }
- </style>
 
+
+
+
+  /* foooooteeeeeeeerrrrrrrrrrrrrr+++++++++++++ */
+   
+  </style>
   </head>
   <body>
-     
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <!-- <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-    Bootstrap
-  </a> -->
-        <a class="navbar-brand" href="#">𝕽𝖆𝖍𝖚𝖑 </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-          
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About-0">About </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skill-0">Skill</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-0">Contact </a>
-            </li>
-            
-          </ul>
-        </div>
-      </nav> 
+   <!-- ++++++++++++++++++++ navbar start +++++++++++++++++++++++++++++++++++++++ -->
+   <nav class="navbar navbar-expand-lg navbar-light  ">
+    <a class="navbar-brand" href="#">𝕽𝖆𝖍𝖚𝖑</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto mx-5 ">
+        <li class="nav-item active">
+          <a class="nav-link  "  href="#">HOME  <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About-0">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skill-0">SKILL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-0">CONTACT </a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+   <!-- ++++++++++++++++++++ navbar end+++++++++++++++++++++++++++++++++++++++ -->
 
       <!-- +++++++++banner making start++++++++++++++ -->
        <section class="site-banner"> 
       <div class="container">
           <div class="row">
-              <div class="col-lg-6 col-md-12 col-12">
+              <div class="col-lg-6 col-md-6 col-12">
                   <h2 class="title-text  ">Hey </h2>
                   <h1 class="title-text  text-uppercase">I am Rahul </h1>
                   <h4 class="title-text text-uppercase">I am Frontand Developer</h4>
@@ -436,12 +456,12 @@ width: 70%;
 
 
               </div>
-              <div class=" banner-image col-lg-6 col-md-12 col-12">
+              <div class=" banner-image col-lg-6 col-md-6 col-12">
                   <img src="http://i.xp.io/27xUXMxe.png" alt="banner img " class="img-fluid">
               </div>
           </div>
-      </div></section>
-      <!-- +++++++++banner making start++++++++++++++ -->
+      </div></section>  
+      <!-- +++++++++banner making start++++++++++++++
 
       <!-- ++++++++++++++about section start++++++++++++++++++++++++ -->
       <br><br><br><br><br> <section class="about-area">
@@ -463,7 +483,7 @@ width: 70%;
               <div class="para">
                 I am undergraduate student of Electronics and Communication  Engineering at Rajasthan Technical University, Kota.I am a   Frontend Developer and Web Designer also . I also know adobe Photoshop and adobe illustrator. I belive in Self learing .  I also fond of Robotics and  photo editing .
               </div>
-              <hr   color="red">
+              <!-- <hr   color="red"> -->
               <div class="me"> 
               <span>Name: Rahul MEENA </span><br>
               <span>Age: 20</span><br>
@@ -590,8 +610,9 @@ width: 70%;
       <!-- +++++++++++++++++++++++++++contact section start+++++++++++++++++++++ -->
      <section class="contact">
       <h1 class=" contact-1  text-center  " id="contact-0" > Contact Us  </h1> 
-      <hr class="line " color="red"><br><br><br>
-       <div class=" con-2 container">
+      <hr class="line " color="red">
+      <br><br><br>
+       <div class=" con-2 container-fluid ">
          <div class="row">
            <div class=" contact-line col-lg-6 col-md-12 col-12">
              <h2>
@@ -635,11 +656,72 @@ width: 70%;
          </div>
        </div>
      </section>
-      
-      <!-- +++++++++++++++++++++++++++contact section end+++++++++++++++++++++ -->
 
+
+   <!-- -********************* footer satrt++++++ -->
+   <!-- Footer -->
+<footer class="page-footer font-small black   ">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 ">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic" href="https://www.facebook.com/">  
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic" href=" https://twitter.com/?lang=en">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic" href="https://www.google.com/">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic" href="https://www.linkedin.com/feed/">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic" href="https://www.instagram.com/">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic" href="https://github.com/Rahul001-hub">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+     Rahul Meena 
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+   <!-- -********************* footer end ++++++ -->
+
+   
 
     <!-- Optional JavaScript -->
+    <!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
